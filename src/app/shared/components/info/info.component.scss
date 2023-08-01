@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1;
+    }
+    .text{
+        grid-column: 2/5; 
+    }
+}
+.info{
+    background-color: #218aff;
+    border: 2px #1c68c0 solid;
+}
+.correct{
+    background-color: green;
+    border: 2px rgb(1, 94, 1);
+}
+.warn{
+    background-color: rgb(245, 157, 57);
+    border: 2px rgb(202, 130, 48) solid;
+}
+.error{
+    background-color: rgb(223, 28, 28);
+    border: 2px rgb(182, 23, 23) solid;
+}

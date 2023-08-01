@@ -1,0 +1,12 @@
+<app-form-box [title]="'Register'">
+    <div class="form">
+        <app-input  [(data)]="registerObj.usuario" (dataChange)="checkData()" [label]="'Usuario'" [placeHolder]="false"></app-input>
+        <app-input  [(data)]="registerObj.password1" [error]="msgInfo ? true : false" (dataChange)="checkData()"[label]="'Contraseña'" [placeHolder]="false"></app-input>
+        <app-input  [(data)]="registerObj.password2" (dataChange)="checkData()"[label]="'Repita la contraseña'" [placeHolder]="false"></app-input>
+        
+    </div>
+    <app-info *ngIf="msgInfo !=''" [type]="'info'" [text]="msgInfo"></app-info>
+    <div class="buttons">
+        <app-button (clickEvent)="register()"></app-button>
+    </div>
+</app-form-box>

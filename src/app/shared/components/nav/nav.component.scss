@@ -1,0 +1,38 @@
+@import '../../../../assets/styles/colors';
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: $color-blue-4;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+    .block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 5px;
+            .element{
+                border: 1px solid black;
+                padding: 10px 20px;
+                height: 100%;
+                background-color: $color-black-3;
+            }
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+}

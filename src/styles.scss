@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/styles/_colors.scss';
+*{ box-sizing: border-box;}
+body{
+    background-color: $color-p-5 !important;
+    color: white;
+    font-family: 'REM', sans-serif; 
+    box-sizing: border-box;
+}

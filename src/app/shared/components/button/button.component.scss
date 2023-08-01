@@ -1,0 +1,10 @@
+@import '../../../../assets/styles/_colors.scss';
+.container{
+    position: relative;
+    font-family: 'Bungee Spice', cursive;
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: $color-blue-5;
+    cursor: pointer;
+    user-select: none;
+}

@@ -1,0 +1,11 @@
+<div class="container">
+    <div *ngIf="!placeHolder" class="label">{{label}}</div>
+    <input 
+        class="input" 
+        [placeholder]="placeHolder ? label : ''" [type]="type"
+        [(ngModel)]="data"
+        (ngModelChange)="onInputChange()"
+        [ngClass]="error ? 'error' : ''"
+
+    >
+</div>

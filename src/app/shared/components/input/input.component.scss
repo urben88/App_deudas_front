@@ -1,0 +1,29 @@
+@import '../../../../assets/styles/colors';
+.container{
+    margin-bottom: 20px;
+    position: relative;
+    width: auto;
+    display: block;
+    .label{
+        margin-bottom: 7px;
+    }
+    .input{
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1.5rem;
+        width: auto;
+        transition: 0.5s;
+        &:focus{
+            transition: 0.5s;
+            border-radius: $color-blue-3;
+        }
+    }
+}
+
+.error{
+    transition: 0.5s;
+    outline: 2px solid red !important;
+}

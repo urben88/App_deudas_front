@@ -1,0 +1,12 @@
+<div class="container" [ngClass]="classStyle()">
+    <div class="icon">
+        <i *ngIf="type=='correct'" class="fa-solid fa-check"></i>
+        <i *ngIf="type=='info'" class="fa-solid fa-circle-info"></i>
+        <i *ngIf="type=='error'" class="fa-solid fa-bomb"></i>
+        <i  *ngIf="type=='warn'" class="fa-solid fa-triangle-exclamation"></i>
+    </div>
+
+    <div class="text">
+        {{text}}
+    </div>
+</div>
